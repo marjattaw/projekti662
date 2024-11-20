@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Äänestyssovellus - Ylläpitäjä</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-success text-white text-center py-3">
+    <h1>Ylläpitäjän Sivut</h1>
+  </header>
+  <main class="container mt-5">
+    <section class="mb-5">
+      <h2 class="mb-4">Luo uusi äänestys</h2>
+      <div class="card p-3">
+        <form action="#" method="POST">
+          <div class="mb-3">
+            <label for="aanestysNimi" class="form-label">Äänestyksen nimi</label>
+            <input type="text" id="aanestysNimi" class="form-control" placeholder="Kirjoita äänestyksen nimi">
+          </div>
+          <div class="mb-3">
+            <label for="vaihtoehdot" class="form-label">Vaihtoehdot (pilkulla erotettuna)</label>
+            <input type="text" id="vaihtoehdot" class="form-control" placeholder="Esim. Vaihtoehto 1, Vaihtoehto 2">
+          </div>
+          <button type="submit" class="btn btn-success">Luo äänestys</button>
+        </form>
+      </div>
+    </section>
+    <section>
+      <h2 class="mb-4">Poista olemassa olevia äänestyksiä</h2>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Äänestys 1
+          <button class="btn btn-danger btn-sm">Poista</button>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Äänestys 2
+          <button class="btn btn-danger btn-sm">Poista</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="bg-light text-center py-3 mt-5">
+    <p>&copy; 2024 Äänestyssovellus</p>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
